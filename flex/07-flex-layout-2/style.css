@@ -26,4 +26,65 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 250px;
+  padding: 16px;
+}
+
+
+/* Solution */
+
+/* Setting the overall layout of the page */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+}
+
+.main .sidebar {
+  flex: 0 0 300px;
+}
+
+/* Styling the header */
+
+.header p {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 16px;
+
+}
+
+/* Styling the footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+/* Styling the sidebar */
+
+.main .sidebar ul li a{
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+
+}
+.main .sidebar ul li {
+  margin-bottom: 16px;
+}
+.main .sidebar ul {
+  list-style-type: none;
+}
+
+/* Styling the cards */
+
+.main .card-container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
